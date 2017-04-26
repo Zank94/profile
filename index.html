@@ -4,110 +4,132 @@
     <title>Basic info</title>
 
     <!-- Google fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700">
 
     <!-- Fontawesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Your style -->
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <div class="container">
-      <div class="card text-align-center">
-        <img src="http://res.cloudinary.com/wagon/image/upload/c_fill,h_180,w_180/v1491223977/dp1jyetrliop3wvoinq4.jpg" alt="My face" class="img-circle" id="blue-border">
+    <div id="sidebar">
+      <ul class="list-column">
+        <li>
+          <a href="#summary">
+            <i class="fa fa-info-circle"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#favorite-movies">
+            <i class="fa fa-file-video-o"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#footer">
+            <i class="fa fa-life-ring"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-        <h1>Lucas Sotty</h1>
+    <div id="content">
+      <div class="container">
+        <div class="card text-align-center" id="summary">
+          <img src="http://res.cloudinary.com/wagon/image/upload/c_fill,h_180,w_180/v1491223977/dp1jyetrliop3wvoinq4.jpg" alt="My face" class="img-circle" id="blue-border">
 
-        <h3>Student @ Le Wagon</h3>
+          <h1>Lucas Sotty</h1>
 
-        <p>I'm 29 and I'm a student at Le Wagon Bordeaux.</p>
+          <h3>Student @ Le Wagon</h3>
 
-        <a href="http://www.lewagon.com" id="btn-red" target="_blank">See for yourself</a>
-      </div>
+          <p>I'm 29 and I'm a student at Le Wagon Bordeaux.</p>
 
-      <div class="card text-align-center">
-        <ul class="list-inline">
-          <li>
-            <a href="https://www.facebook.com/lucas.sotty" target="_blank">
-              <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook
-            </a>
-          </li>
+          <a href="http://www.lewagon.com" id="btn-red" target="_blank">See for yourself</a>
+        </div>
 
-          <li>
-            <a href="https://twitter.com/Lucas_Sotty?lang=en" target="_blank">
-              <i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div class="card text-align-center">
+          <ul class="list-inline">
+            <li>
+              <a href="https://www.facebook.com/lucas.sotty" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook
+              </a>
+            </li>
 
-      <div class="card text-align-center">
-        <h3>My Favorite Movies</h3>
+            <li>
+              <a href="https://twitter.com/Lucas_Sotty?lang=en" target="_blank">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter
+              </a>
+            </li>
+          </ul>
+        </div>
 
-        <table>
-          <tr>
-            <td>
-              <img src="http://fr.web.img2.acsta.net/r_1920_1080/medias/nmedia/18/72/34/14/19476654.jpg" alt="Inception" width="200px">
-            </td>
+        <div class="card text-align-center" id="favorite-movies">
+          <h3>My Favorite Movies</h3>
 
-            <td>
-              <h4>Inception</h4>
-              <p>
-                Dom Cobb est un voleur expérimenté – le meilleur qui soit dans l’art périlleux de l’extraction : sa spécialité consiste à s’approprier les secrets les plus précieux d’un individu, enfouis au plus profond de son subconscient...
-              </p>
-            </td>
-          </tr>
+          <table>
+            <tr>
+              <td>
+                <img src="http://fr.web.img2.acsta.net/r_1920_1080/medias/nmedia/18/72/34/14/19476654.jpg" alt="Inception" width="200px">
+              </td>
 
-          <tr>
-            <td>
-              <img src="http://fr.web.img2.acsta.net/r_1920_1080/medias/nmedia/18/83/50/33/19794371.jpg" alt="Warrior" width="200px">
-            </td>
+              <td>
+                <h4>Inception</h4>
+                <p>
+                  Dom Cobb est un voleur expérimenté – le meilleur qui soit dans l’art périlleux de l’extraction : sa spécialité consiste à s’approprier les secrets les plus précieux d’un individu, enfouis au plus profond de son subconscient...
+                </p>
+              </td>
+            </tr>
 
-            <td>
-              <h4>Warrior</h4>
-              <p>
-                Ancien Marine brisé, Tommy Conlon rentre au pays et demande à son père de le préparer pour un tournoi d’arts martiaux mixtes qui lui permettrait de gagner une fortune...
-              </p>
-            </td>
-          </tr>
+            <tr>
+              <td>
+                <img src="http://fr.web.img2.acsta.net/r_1920_1080/medias/nmedia/18/83/50/33/19794371.jpg" alt="Warrior" width="200px">
+              </td>
 
-          <tr>
-            <td>
-              <img src="http://fr.web.img6.acsta.net/r_1920_1080/medias/nmedia/18/35/41/59/18867130.jpg" alt="Star Wars A New Hope" width="200px">
-            </td>
+              <td>
+                <h4>Warrior</h4>
+                <p>
+                  Ancien Marine brisé, Tommy Conlon rentre au pays et demande à son père de le préparer pour un tournoi d’arts martiaux mixtes qui lui permettrait de gagner une fortune...
+                </p>
+              </td>
+            </tr>
 
-            <td>
-              <h4>Star Wars A New Hope</h4>
-              <p>
-                Il y a bien longtemps, dans une galaxie très lointaine... La guerre civile fait rage entre l'Empire galactique et l'Alliance rebelle...
-              </p>
-            </td>
-          </tr>
-        </table>
-      </div>
+            <tr>
+              <td>
+                <img src="http://fr.web.img6.acsta.net/r_1920_1080/medias/nmedia/18/35/41/59/18867130.jpg" alt="Star Wars A New Hope" width="200px">
+              </td>
 
-      <div class="card text-align-center">
-        <h3>About this page</h3>
+              <td>
+                <h4>Star Wars A New Hope</h4>
+                <p>
+                  Il y a bien longtemps, dans une galaxie très lointaine... La guerre civile fait rage entre l'Empire galactique et l'Alliance rebelle...
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
 
-        <p>
-          This page has been coded during the FullStack program @LeWagon. That was probably the best experience of my entire life.
-        </p>
+        <div class="card text-align-center" id="footer">
+          <h3>About this page</h3>
 
-        <ul class="list-inline">
-          <li>
-            <a href="" target="_blank"><i class="fa fa-heart" aria-hidden="true"></i></a>
-          </li>
+          <p>
+            This page has been coded during the FullStack program @LeWagon. That was probably the best experience of my entire life.
+          </p>
 
-          <li>
-            <a href="" target="_blank"><i class="fa fa-share" aria-hidden="true"></i></a>
-          </li>
+          <ul class="list-inline">
+            <li>
+              <a href="" target="_blank"><i class="fa fa-heart" aria-hidden="true"></i></a>
+            </li>
 
-          <li>
-            <a href="" target="_blank"><i class="fa fa-star" aria-hidden="true"></i></a>
-          </li>
-        </ul>
+            <li>
+              <a href="" target="_blank"><i class="fa fa-share" aria-hidden="true"></i></a>
+            </li>
+
+            <li>
+              <a href="" target="_blank"><i class="fa fa-star" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>

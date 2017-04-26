@@ -66,6 +66,29 @@ a:hover {
   padding-left: 0px;
 }
 
+.list-column {
+  padding-left: 0px;
+}
+
+.list-column > li {
+  list-style: none;
+  font-size: 30px;
+  padding: 20px 0px;
+}
+
 td {
   padding: 5px;
+}
+
+#sidebar {
+  position: fixed;
+  width: 100px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(33, 34, 35);
+  text-align: center;
+}
+#page-content {
+  margin-left: 300px;
 }
